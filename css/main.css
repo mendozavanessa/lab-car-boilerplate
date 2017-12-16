@@ -15,25 +15,41 @@
   float: left;
 }
 /*imagen principal*/
-.image-principal {
+.caja-flex {
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  background-image: url("../assets/images/taxi.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-image: url("../assets/images/taxi.jpg");
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0;
+
 }
 /*container de registrate*/
 .registrate {
-  outline: 1px solid red;
   background-color: #ffc107;
-  position: absolute;
-  right: 0;
-  top: 40%;
-  z-index: 10;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.registrate h1,p {
+  color: white;
+}
+.view-mobile {
+  display: flex;
+  justify-content: flex-start;
 }
 .linea {
-  border: 2px solid blue;
+  border: 1px solid white;
   display: inline-block;
   width: 40%;
   margin: 3px 0;
@@ -44,19 +60,15 @@
 /*segunda seccion*/
 .celular {
   background-color: #ffc107;
+  width: 100%;
+  padding: 2.5em 2em;
 }
 .caja-celular {
   outline: 1px solid white;
-  margin: 1em 0;
-}
-.caja-celular img {
-  width: 40%;
-  margin: 1em auto;
 }
 .textto-descarga {
   width: 40%;
   font-size: 1.6em;
-  margin: 3em 4em;
   color: white;
 }
 .imagen-celular {
@@ -64,7 +76,97 @@
   display: inline-block;
   outline: 1px solid blue;
 }
-.imagen-celular img {
+.cell {
+  padding: 2.5em 3em;
+}
+/*tercera seccion*/
+.image-tercera-seccion {
+  background-image: url("../assets/images/conduce.jpg");
   width: 100%;
-  outline: 1px solid red;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0;
+}
+.conduce {
+  height: 75vh;
+  background-color: rgba( 0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 0 4em;
+  justify-content: center;
+}
+.conduce:nth-child(1) {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+/* cuarta seccion */
+.caja-tarifa {
+  background-color: #ffc107;
+}
+.mapa {
+  outline: 1px solid white;
+  margin: 2em 1em;
+  width: 30%;
+}
+.mapa-img {
+  width: 100%;
+  height: 93%;
+  margin: 0.9em auto;
+
+}
+.caja-texto-tarifa {
+  font-size: 20px;
+  margin: 2em 2em;
+}
+.caja-texto-tarifa:nth-child(1){
+  color: white;
+}
+.caja-texto-tarifa div {
+  margin: 1em 1em;
+}
+.boton {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+/* quinta seccion */
+.pie-pagina {
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  padding: 4em 4em;
+}
+.pie-pagina ul li{
+  list-style: none;
+  margin: 15px 15px;
+  font-size: 16px;
+}
+.tag-footer {
+  margin: 10px;
+}
+.caja-list-footer {
+  display: flex;
+  align-items: flex-end;
+
+}
+
+@media (max-width:768px) {
+  .mapa {
+    width: 90%;
+  }
+  .caja-texto-tarifa {
+    margin: 0 0;
+  }
+  .caja-list-footer {
+    display: inline-block;
+  }
+  .pie-pagina {
+    padding: 10px 10px;
+  }
 }

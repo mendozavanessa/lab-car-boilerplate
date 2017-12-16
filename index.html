@@ -6,6 +6,7 @@
     <meta name="viewport" content="width:device-width, user-scalable=no,initial-scale=1.0, minumun-scale=1.0">
     <link rel="stylesheet" href="vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/icomoon/style.css">
     <title>Document</title>
   </head>
   <body>
@@ -34,44 +35,156 @@
     <!-- primera seccion-->
     <section>
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 image-principal">
-            <div class="col-md-offset-4 col-md-4 registrate">
-              <h1>Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
-              <p>Viaja con <img src="assets/images/logoBlanco.png" alt=""> </p>
-              <div class="col-md-12 btn-group" role="group" aria-label="...">
+        <div class="row caja-flex">
+          <div class="col-lg-12 hero">
+            <div class="col-lg-6 registrate">
+              <h1 class="hidden-xs">Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
+              <p class="hidden-xs">Viaja con <img src="assets/images/logoBlanco.png" alt=""> </p>
+              <div class="col-lg-12 btn-group hidden-xs" role="group" aria-label="...">
                 <button type="button" class="btn btn-default">REGISTRATE</button>
               </div>
-              <div class="col-md-offset-0 col-md-12">
+              <div class="col-lg-offset-0 col-lg-12 hidden-xs">
                 <div class="linea"></div>
                 <p class="o-bien">O bien</p>
                 <div class="linea"></div>
               </div>
-              <div class="col-md-12 btn-group" role="group" aria-label="...">
+              <div class="col-lg-12 btn-group hidden-xs" role="group" aria-label="...">
                 <button type="button" class="btn btn-default">Conviertete en un conductor</button>
               </div>
+              <div class="hidden-lg hidden-sm hidden-md view-mobile">
+                  <h1>Comienza a Viajar  </h1>
+                  <img src="assets/img/logo-blanco.png" alt="">
+              </div>
+              <br>
+              <button type="button" class="btn hidden-lg hidden-sm hidden-md btn-default" name="button"><strong>Descarga el APP</strong></button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- segunda seccion-->
+    <section class="padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-10 col-md-10 col-xs-12 celular">
+            <div class=" row col-lg-10 caja-celular">
+              <div class="col-lg-4  col-md-6 col-xs-12">
+                <h3 class=" text-center font-white visible-xs">La nueva APP </h3>
+                <img class="cell img-responsive" src="assets/images/iPhone6Plus.png" alt="...">
+              </div>
+              <div class="col-lg-6 col-md-6 hidden-xs textto-descarga">
+                <h2>Descarga la nueva app</h2>
+                <p>La version actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras aun mas facil y rapido. Con solo tocar un boton, un auto llega justo a tu ubicacion. Subete y no te preocupes: tu conductor sabe exactamente a donde ir.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                  <br>
+                  <p>Llega a tu destino aun mas rapido</p>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--tercera seccion-->
     <section>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 celular">
-            <div class="col-md-10 caja-celular">
-              <img class="col-md-6" src="assets/images/iPhone6Plus.png" alt="...">
-              <div class="col-md-4 textto-descarga">
-                <h2>Descarga la nueva app</h2>
-                <p>La version actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras aun mas facil y rapido. Con solo tocar un boton, un auto llega justo a tu ubicacion. Subete y no te preocupes: tu conductor sabe exactamente a donde ir.</p>
+          <div class="col-lg-12 image-tercera-seccion">
+            <div class="col-lg-4 col-lg-offset-8 col-lg-4 col-xs-12 col-lg-offset-8 conduce">
+              <h1>Conduce cuando quieras</h1>
+              <p>LabaCar es una opcion flexible para alcanzar tus metas financieras</p>
+              <div class="col-md-12 btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">REGISTRATEConvierte en conductor
+              </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    <!-- cuarta seccion -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-xs-12 caja-tarifa">
+            <div class="col-lg-6 col-xs-12 caja-texto-tarifa">
+              <h1>Tarifas</h1>
+              <p>Consulta las tarifas LabCar aqui</p>
+              <div class="">
+                <img src="assets/images/shape.png" alt="">
+                <button type="button" class="btn btn-default boton">Ingresa tu punto de partida</button>
+              </div>
+              <div class="">
+                <img src="assets/images/shape2.png" alt="">
+                <button type="button" class="btn btn-default boton">Ingrese su destino</button>
+              </div>
+              <div class="col-lg-12 btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">!TRAZAR RUTA!</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-xs-6 mapa">
+                <img class="mapa-img"src="assets/images/mapa.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--tercera seccion-->
+    <!-- quita seccion  -->
+    <footer class="pie-pagina">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <img src="assets/images/logoBlanco.png" alt="">
+            <hr>
+            <div class="caja-list-footer">
+              <div class="col-lg-3 col-md-3 col-lg-offset-0 col-xs-offset-6 col-xs-6">
+                <span class="icon-footer icon-facebook"></span>
+                <span class="icon-footer icon-twitter"></span>
+                <span class="icon-footer icon-linkedin2"></span>
+                <span class="icon-footer icon-appleinc"></span>
+                <span class="icon-footer icon-play3"></span>
+              </div>
+              <div class="col-lg-3 col-md-3 col-xs-6">
+                    <ul>
+                        <li>Viaja</li>
+                        <li>Conduce</li>
+                        <li>Ciudades</li>
+                        <li>Ciudades</li>
+                        <li>Entregas</li>
+                        <li>Como funciona ?</li>
+                        <li>Paises</li>
+                        <li>Seguridad</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-xs">
+                    <ul>
+                        <li>Oportunidades</li>
+                        <li>Nuestra historia</li>
+                        <li>API de LabCar</li>
+                        <li>Evento</li>
+                        <li>Desarrolladores</li>
+                        <li>Servicios</li>
+                        <li>Laboratoria</li>
+                        <li>Coders</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                  <img class="tag-footer img-responsive" src="assets/images/appstore.png" alt="">
+                  <img class="tag-footer img-responsive" src="assets/images/enBadgeWebGeneric.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+              <hr>
+              <div class="text-left col-lg-12 col-sm-12">
+                  © 2017 LabCar technologies Inc.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript"src="vendors/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript"src="vendors/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   </body>
