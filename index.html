@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="assets/icomoon/style.css">
+    <link rel="stylesheet" href="assets/icomoon/iconos/style.css">
     <title>Document</title>
   </head>
   <body>
@@ -27,25 +28,56 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Viaja</a></li>
             <li><a href="#">Conduce</a></li>
-            <li><a href="#">Inicia sesion</a></li>
+            <li class="active"><a href="#" data-toggle="modal" data-target="#myModal">Inicia sesion</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+    <!-- Modal iniciar sesion-->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content green">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="caja-img-login">
+                  <img src="assets/images/login.png" alt="">
+                </div>
+              </div>
+              <div class="modal-body caja-form">
+                <div class="caja-log">
+                  <div class="user-login">
+                    <span class="icon-user"></span>
+                    <input type="text" placeholder=" Username">
+                  </div>
+                  <div class="private-login">
+                    <span class="icon-lock"></span>
+                    <input type="text" placeholder=" Password">
+                  </div>
+                  <button type="button" class="btn btn-default boton-login">LOGIN</button>
+                  <p>forgot password?<a href="#"> Click Here</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- primera seccion-->
     <section>
       <div class="container-fluid">
         <div class="row caja-flex">
           <div class="col-lg-12 hero">
             <div class="col-lg-6 registrate">
-              <h1 class="hidden-xs">Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
-              <p class="hidden-xs">Viaja con <img src="assets/images/logoBlanco.png" alt=""> </p>
+              <h1 class="hidden-xs white">Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
+              <p class="hidden-xs white">Viaja con <img src="assets/images/logoBlanco.png" alt=""> </p>
               <div class="col-lg-12 btn-group hidden-xs" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">REGISTRATE</button>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">REGISTRATE</button>
               </div>
               <div class="col-lg-offset-0 col-lg-12 hidden-xs">
                 <div class="linea"></div>
-                <p class="o-bien">O bien</p>
+                <p class="o-bien white">O bien</p>
                 <div class="linea"></div>
               </div>
               <div class="col-lg-12 btn-group hidden-xs" role="group" aria-label="...">
@@ -62,6 +94,38 @@
         </div>
       </div>
     </section>
+    <!-- Modal registrate-->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content grey">
+              <div class="modal-header border">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 id="myModalLabel"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="caja-formulario">
+                  <button type="button" class="btn black">Ya tienes una cuenta?</button>
+                  <a href="#">O crea una cuenta nueva</a>
+                  <div id="nombre-apellido">
+                    <input type="text"placeholder=" Nombre">
+                    <input type="text"placeholder=" Apellidos">
+                  </div>
+                  <input type="text"placeholder=" Correo Electronico ejemplo@gmail.com">
+                  <input type="text"placeholder=" contraseña">
+                  <input type="text"placeholder=" Telefono">
+                  <input type="text"placeholder=" Ciudad">
+                  <input type="text"placeholder=" (opcional) Codigo de Invitacion">
+                  <button type="button" class="btn plomo">Como te enteraste de nosotros?</button>
+                  <button type="button" class="btn blue">ENVIAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- segunda seccion-->
     <section class="padding">
       <div class="container-fluid">
@@ -96,12 +160,54 @@
               <h1>Conduce cuando quieras</h1>
               <p>LabaCar es una opcion flexible para alcanzar tus metas financieras</p>
               <div class="col-md-12 btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">REGISTRATEConvierte en conductor
+                <button type="button" class="btn color" data-toggle="modal" data-target="#myModal3">Convierte en conductor
               </div>
           </div>
           </div>
       </div>
     </section>
+    <!-- Modal conviertete en conductor-->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content grey">
+              <div class="modal-header border">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 id="myModalLabel"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="caja-formulario">
+                  <strong>¿Tienes vehiculo de 4 puertas?</strong>
+                  <select class="" name="">
+                    <option value="">Si</option>
+                  </select>
+                  <strong>Marca</strong>
+                  <select class="" name="">
+                    <option value="">Elige la marca del vehiculo</option>
+                  </select>
+                  <p>¿No ves tu vehiculo en la lista? Envia un correo electronico a <a href="">sociomdv@uber.com</a> </p>
+                  <strong>Modelo</strong>
+                  <select class="" name="">
+                    <option value="">Modelo 1</option>
+                  </select>
+                  <strong>Año</strong>
+                  <select class="" name="">
+                    <option value="">2017</option>
+                  </select>
+                  <strong>Numero de matricula</strong>
+                  <select class="" name="">
+                    <option value="">Numero de la matricula</option>
+                  </select>
+                  <p>La informacion de la matricula ayuda a los clientes a identificar tu vehiculo.</p>
+                  <button type="button" class="btn blue">ENVIAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- cuarta seccion -->
     <section>
       <div class="container-fluid">

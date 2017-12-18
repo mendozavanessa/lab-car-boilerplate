@@ -14,6 +14,67 @@
 .nav-labcar {
   float: left;
 }
+/*modal */
+.caja-img-login {
+  display: flex;
+  justify-content: space-around;
+}
+.caja-form {
+  display: flex;
+  justify-content: space-around;
+}
+.caja-log {
+  width: 50%;
+  height: 30vh;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0.5em;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.user-login {
+  width: 75%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.private-login {
+  width: 75%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.boton-login {
+  width: 40%;
+  margin: 0 auto;
+  background-color: orange;
+}
+.caja-log p {
+  margin: 0 auto;
+}
+.caja-log p a {
+  color: red;
+}
+.caja-log span {
+  align-items: center;
+  display: flex;
+  margin: 0 7px;
+}
+.caja-log input {
+  border: none;
+  border-left: 1px solid grey;
+}
+.green {
+  background-color: #08ac9d;
+}
 /*imagen principal*/
 .caja-flex {
   display: flex;
@@ -41,7 +102,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.registrate h1,p {
+.white {
   color: white;
 }
 .view-mobile {
@@ -56,6 +117,46 @@
 }
 .o-bien {
   display: inline-block;
+}
+/*modal registrate*/
+.caja-formulario {
+  display: flex;
+  flex-direction: column;
+}
+.caja-formulario input {
+  margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 5px;
+}
+.black {
+  background-color: black;
+  color: white;
+}
+.grey {
+  background-color: #98999a;
+  padding: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+.plomo {
+  background-color: #e1e1e1;
+}
+.blue {
+  background-color: #5bc0de;
+  margin: 0.5em 0;
+}
+.border {
+  border: none;
+  padding: 0;
+}
+#nombre-apellido {
+  display: inherit;
+}
+#nombre-apellido input{
+  width: 12em;
+  margin-left: 0.5em;
 }
 /*segunda seccion*/
 .celular {
@@ -104,6 +205,17 @@
   color: white;
   font-size: 14px;
   margin: 0;
+}
+.color{
+  background-color:#ffc107;
+}
+/*modal-convierte en conductor*/
+.caja-formulario select {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 5px;
 }
 /* cuarta seccion */
 .caja-tarifa {
