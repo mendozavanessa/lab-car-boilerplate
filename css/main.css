@@ -19,6 +19,10 @@
   display: flex;
   justify-content: space-around;
 }
+.caja-img-login img {
+  width: 200px;
+  height: 200px;
+}
 .caja-form {
   display: flex;
   justify-content: space-around;
@@ -73,12 +77,19 @@
   border-left: 1px solid grey;
 }
 .green {
-  background-color: #08ac9d;
+  background: linear-gradient(to bottom right, white, grey);
 }
 /*imagen principal*/
 .caja-flex {
   display: flex;
   justify-content: center;
+}
+.btn-black {
+  background: black;
+  color: white;
+}
+.btn-black:hover {
+  color: yellow;
 }
 .hero {
   background-image: url("../assets/images/taxi.jpg");

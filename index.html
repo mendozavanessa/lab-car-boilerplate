@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width:device-width, user-scalable=no,initial-scale=1.0, minumun-scale=1.0">
     <link rel="stylesheet" href="vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.jpg">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="assets/icomoon/style.css">
     <link rel="stylesheet" href="assets/icomoon/iconos/style.css">
@@ -42,22 +43,25 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="caja-img-login">
-                  <img src="assets/images/login.png" alt="">
+                  <img class="img-responsive" src="assets/images/login.png" alt="">
                 </div>
               </div>
               <div class="modal-body caja-form">
-                <div class="caja-log">
-                  <div class="user-login">
-                    <span class="icon-user"></span>
-                    <input type="text" placeholder=" Username">
+                <form>
+                  <div class="input-group col-md-8 col-md-offset-2">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
                   </div>
-                  <div class="private-login">
-                    <span class="icon-lock"></span>
-                    <input type="text" placeholder=" Password">
+                  <br>
+                  <div class="input-group col-md-8 col-md-offset-2">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
                   </div>
-                  <button type="button" class="btn btn-default boton-login">LOGIN</button>
-                  <p>forgot password?<a href="#"> Click Here</a></p>
-                </div>
+                  <br>
+                  <div class="col-md-8 col-md-offset-2">
+                    <button type="submit" class="btn btn-black btn-block">Login</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

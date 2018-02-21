@@ -1,4 +1,12 @@
-# LABCAR
+## LABCAR
+
+LabCar es una app web de empresa de taxis que tiene el objetivo de permitir pedir un taxi cuando quieras y en donde quieras.
+
+![vistaFinal](assets/images/readme1.png)
+
+
+## Desarrollado para
+[Laboratoria](http://laboratoria.la)
 
 LabCAr es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras. Tenemos una gran cantidad de conductores por todo el departamento. Se a comprobado que Labcar tiene las tarifas mas bajas del mercado.
 Sabemos que tu tiempo es dinero, por lo que si nuestro servicio se demora en llegar mas de lo establecido te daremos un 10% de descuento en tu viaje. Puedes ver el demo del website haciendo click [aquí](https://laboratoriasprint05.herokuapp.com/).
