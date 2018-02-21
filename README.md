@@ -1,4 +1,4 @@
-## LABCAR
+# LABCAR
 
 LabCar es una app web de empresa de taxis que tiene el objetivo de permitir pedir un taxi cuando quieras y en donde quieras.
 
